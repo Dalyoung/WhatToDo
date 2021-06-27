@@ -4,7 +4,9 @@ import todoList from './tabs/todoList';
 import todoCalendar from './tabs/todoCalendar';
 import todoStatistics from './tabs/todoStatistics';
 import { withTranslation } from "react-i18next";
-import i18n from './locales/i18n'
+import i18n from './locales/i18n';
+import * as mydb from './data/database';
+
 
 //////////////// 탭 설정 ////////////////////////////////
 const TabNavigator = createMaterialTopTabNavigator({
@@ -28,7 +30,6 @@ const TabNavigator = createMaterialTopTabNavigator({
   },
 });
 /////////////////////////////////////////////////////////
-
 
 // export default WhatTodoApp;
 export default createAppContainer(TabNavigator);
